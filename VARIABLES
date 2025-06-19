@@ -1,0 +1,34 @@
+A variable in C is a named piece of memory which is used to store data and access it whenever required.
+It allows us to use the memory without having to memorize the exact memory address.
+
+To create a variable in C, we have to specify a name and the type of data it is going to store in the syntax.
+data_type name;
+
+***  A statically typed language is one where the type of every variable is known at compile time — before the program runs.
+Types
+
+Description
+
+Data Types
+
+[Primitive Data Types]	
+Primitive data types are the most basic data types that are used for representing simple values.	
+int, char, float, double, void
+
+[Derived Types]
+The data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types.	
+array, pointers, function
+
+[User Defined Data Types]
+The user-defined data types are defined by the user himself.
+structure, union, enum
+
+*Integer Data Type*
+The integer datatype in C is used to store the integer numbers (any number including positive, negative and zero without decimal part). Octal values, hexadecimal values, and decimal values can also be stored in int data type in C.
+
+Range:  -2,147,483,648 to 2,147,483,647
+Size: 4 bytes
+Format Specifier: %d
+
+
+
