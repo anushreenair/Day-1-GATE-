@@ -1,0 +1,78 @@
+C is a general-purpose procedural programming language initially developed by Dennis Ritchie in 1972 at Bell Laboratories of AT&T Labs.
+It was mainly created as a system programming language to write the UNIX operating system.
+Header Files Inclusion - Line 1 [#include <stdio.h>]
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.
+All lines that start with # are processed by a preprocessor which is a program invoked by the compiler. 
+
+*** Procedural programming] is a style of programming where you write step-by-step instructions (procedures) to tell the computer exactly what to do — one task after another.
+*** A system programming language is a programming language that is designed for writing:
+    Low-level code that interacts directly with the hardware and operating system.
+***Low-level memory access means:
+   The ability of a programming language to directly read from or write to specific memory locations (RAM addresses) using pointers or addresses.
+   It gives the programmer full control over how data is stored, accessed, and manipulated in memory.
+
+
+*** [Preprocessor] : A special step that runs before compilation
+*** [Directive] :	A command that tells the preprocessor what to do
+
+
+///Writing First Program in C Language///
+#include <stdio.h>
+int main(void)
+{
+    // This prints "Hello World"
+    printf("Hello World");
+    return 0;  
+}
+
+LINE 1 
+Types of C Header Files
+
+There are two types of header files in C:
+ * Standard / Pre-existing header files
+ * Non-standard / User-defined header files
+
+
+| Header File      | What It Provides                              | Common Functions/Usage                         |
+| ---------------- | --------------------------------------------- | ---------------------------------------------- |
+| **`<stdio.h>`**  | Standard Input/Output                         | `printf()`, `scanf()`, `fgets()`, `putchar()`  |
+| **`<stdlib.h>`** | Standard Library (Memory, Conversions, Exit)  | `malloc()`, `free()`, `atoi()`, `exit()`       |
+| **`<string.h>`** | String manipulation functions                 | `strlen()`, `strcpy()`, `strcmp()`, `strcat()` |
+| **`<math.h>`**   | Math functions                                | `sqrt()`, `pow()`, `ceil()`, `floor()`         |
+| **`<ctype.h>`**  | Character classification and conversion       | `isalpha()`, `isdigit()`, `toupper()`          |
+| **`<limits.h>`** | Defines macros for limits of data types       | `INT_MAX`, `CHAR_MIN`, etc.                    |
+| **`<float.h>`**  | Limits of floating-point types                | `FLT_MAX`, `DBL_MIN`, etc.                     |
+| **`<time.h>`**   | Date and time manipulation                    | `time()`, `clock()`, `difftime()`              |
+| **`<assert.h>`** | Used for debugging (runtime condition checks) | `assert()`                                     |
+
+LINE 2 
+
+The next part of a C program is the main() function. 
+It is the entry point of a C program and the execution typically begins with the first line of the main(). 
+The empty brackets indicate that the main doesn't take any parameter.
+The int that was written before the main indicates the return type of main().
+The value returned by the main indicates the status of program termination.
+
+Line 3 to Line 6 [enclosed in {}]
+Body of Main Method -
+The body of the main method in the C program refers to statements that are a part of the main function.
+It can be anything like manipulations, searching, sorting, printing, etc.
+A pair of curly brackets define the body of a function. All functions must start and end with curly brackets.
+
+ Line 7' Comment -
+[// This prints "Hello World"]
+The comments are used for the documentation of the code or to add notes in your program that are ignored by the compiler and are not the part of executable program .
+
+ Line 4 [printf("Hello World");]
+Statements are the instructions given to the compiler. 
+In C, a statement is always terminated by a semicolon (;). 
+In this particular case, we use printf() function to instruct the compiler to display "Hello World" text on the screen.
+
+Return Statement - Line 5 [return 0;]
+The last part of any C function is the return statement. 
+The return statement refers to the return values from a function. 
+This return statement and return value depend upon the return type of the function.
+The return statement in our program returns the value from main().
+The returned value may be used by an operating system to know the termination status of your program. 
+The value 0 typically means successful termination. 
+
