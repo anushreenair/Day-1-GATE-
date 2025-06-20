@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+#define MIN(a,b) ((a) < (b) ? (a) : (b))
+
+int main(){
+    int result = MIN(3+1,5);
+    printf("%d\n", result);
+    return 0;
+}
+
+
+/*Because of operator precedence, 3 + 1 < 5 evaluates first → 4 < 5 → true, so result = 3 + 1 = 4
+
+But this works by luck, and in complex expressions, it can break
+
+✅ Corrected version:
+
+c
+Copy code
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))*/

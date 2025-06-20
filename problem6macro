@@ -1,0 +1,12 @@
+#include<stdio.h>
+#define SHOW(var) printf(#var "= %d\n", var)
+
+int main() {
+    int value = 10;
+    SHOW(value +2);
+    return 0;
+}
+
+/*
+
+*/
