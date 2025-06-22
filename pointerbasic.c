@@ -12,6 +12,10 @@ int main (){
     printf("%d\n", *p++);// Post-increment pointer p, but print value before increment
     printf("%d\n",(*p)++);// Post-increment value pointed by p, but print value before increment
     printf("%d\n", *p = a + 5); // Assign value to pointer p, which is a + 5
-
+    printf("%d\n",*p--); // Pre-decrement value pointed by p, but print value before decrement
+    printf("%d\n", (*p)--); // Print value pointed by p after decrement
+    printf("%d\n", --(*p)); // Pre-decrement value pointed by p and print it
+    printf("%d\n", ++*p); // Pre-increment value pointed by p and print it
+    printf("%d\n",--*p); // Pre-decrement value pointed by p and print it
     return 0;
 }
